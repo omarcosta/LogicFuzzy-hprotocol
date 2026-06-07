@@ -92,9 +92,11 @@ Com o ambiente virtual ativado, instale as bibliotecas necessárias para a execu
 ```bash
 # Atualiza o instalador de pacotes
 pip install --upgrade pip
+# OU
+python.exe -m pip install --upgrade pip 
 
 # Instala as dependências do projeto
-pip install numpy matplotlib scikit-fuzzy jupyter
+pip install numpy matplotlib scikit-fuzzy jupyter scipy networkx
 
 ```
 
