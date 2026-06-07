@@ -1,7 +1,7 @@
 # SMAUG | H-Protocol
 
-**Fatec Carapicuíba** | 2026_1
-**Curso**: Jogos Digitais, Noite
+**Fatec Carapicuíba** | 2026_1/
+**Curso**: Jogos Digitais, Noite/
 **Aluno:** Omar Junior P. Costa
 
 ---
