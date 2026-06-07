@@ -50,3 +50,69 @@ O sistema processa o ambiente via graus de pertinência, permitindo comportament
 * **Entradas:** `distancia_player`, `vida`.
 * **Saídas:** `potencial_fuga`, `risco_kamikaze`.
 * **Regra de Ouro:** Em vida baixa e distância segura, prioriza fuga total. Em proximidade e vida alta, prioriza evasão (flashbang).
+
+
+##  Configuração do Ambiente 
+
+Para executar o protótipo da IA Fuzzy (`SMAUG_H-Protocol_3.ipynb`), é necessário configurar um ambiente virtual Python para isolar as dependências do projeto.
+
+### 1. Pré-requisitos
+
+Certifique-se de ter o **Python 3.10+** instalado em sua máquina.
+
+### 2. Criando o Ambiente Virtual (venv)
+
+Na raiz do projeto, execute os comandos abaixo no seu terminal:
+
+**No Windows (PowerShell):**
+
+```powershell
+# Cria o ambiente virtual
+python -m venv venv
+
+# Ativa o ambiente
+.\venv\Scripts\Activate.ps1
+
+```
+
+**No Linux/macOS:**
+
+```bash
+# Cria o ambiente virtual
+python3 -m venv venv
+
+# Ativa o ambiente
+source venv/bin/activate
+
+```
+
+### 3. Instalação de Dependências
+
+Com o ambiente virtual ativado, instale as bibliotecas necessárias para a execução do notebook e o processamento da lógica Fuzzy:
+
+```bash
+# Atualiza o instalador de pacotes
+pip install --upgrade pip
+
+# Instala as dependências do projeto
+pip install numpy matplotlib scikit-fuzzy jupyter
+
+```
+
+### 4. Executando o Projeto
+
+Após a instalação, inicie o servidor do Jupyter Notebook para acessar o arquivo:
+
+```bash
+jupyter notebook
+
+```
+
+Isso abrirá uma aba no seu navegador. Selecione o arquivo **`SMAUG_H-Protocol_3.ipynb`** e certifique-se de que o kernel selecionado é o do ambiente virtual criado (`venv`).
+
+---
+
+## 🛠️ Notas de Implementação
+
+* **Gestão de Versão:** O diretório `venv/` está listado no arquivo `.gitignore` para evitar a subida de arquivos de ambiente desnecessários para o repositório remoto.
+* **Visualização:** O notebook está configurado com `%matplotlib inline`, garantindo que os gráficos de pertinência (Fuzzy Membership Functions) sejam renderizados diretamente abaixo das células de teste para facilitar a depuração visual da IA.
